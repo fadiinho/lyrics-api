@@ -26,8 +26,13 @@ interface Response {
 > Por agora só um endpoint.
 
 ## TODO:
-[x] Adicionar endpoint para pesquisar por título.
-[ ] Adicionar endpoint para uma música aleatória.
-  [ ] Por gênero?
-  [ ] Por artista?
-  [ ] Por idioma?
+
+- [x] Adicionar endpoint para pesquisar por título.
+
+- [ ] Adicionar endpoint para uma música aleatória.
+
+  - [ ] Por gênero?
+  
+  - [ ] Por artista?
+
+  - [ ] Por idioma?
