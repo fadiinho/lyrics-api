@@ -5,8 +5,7 @@
   "scripts": {
     "start": "NODE_ENV=production node ./lib/index.js",
     "dev": "NODE_ENV=development ts-node-dev --rs --respawn ./src/index.ts",
-    "build": "tsc",
-    "postinstall": "build"
+    "build": "yarn tsc"
   },
   "engines": {
     "node": "16.x",
