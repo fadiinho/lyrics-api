@@ -8,6 +8,10 @@
     "build": "tsc",
     "postinstall": "build"
   },
+  "engines": {
+    "node": "16.x",
+    "yarn": "3.x"
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "cheerio": "^1.0.0-rc.12",
