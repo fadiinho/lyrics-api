@@ -12,7 +12,7 @@ export const parse = ($: CheerioAPI, link: IGoogleParsedLinks) => {
 
   // Main inspiration:
   // https://github.com/gabrideiros/music-lyrics
-  if (link.baseUrl?.includes('https://www.letras.mus.br')) {  
+  if (link.baseUrl?.includes('https://www.letras.mus.br') || link.baseUrl?.includes('https://www.letras.com')) {
     lyrics = letrasMusBrParser($, link);
   } else if (link.baseUrl?.includes('https://www.letras.com.br')) {
     lyrics = letrasComBrParser($, link);

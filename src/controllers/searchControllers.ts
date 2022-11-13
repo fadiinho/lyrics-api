@@ -7,6 +7,7 @@ import { IGoogleParsedLinks, ISelectors, ParserResult } from "../types";
 const isAccetableLink = (link: string) => {
   const ACCETABLE_LINKS = [
     'https://www.letras.mus.br',
+    'https://www.letras.com',
     'https://www.letras.com.br',
     'https://www.cifraclub.com.br',
     'https://www.youtube.com',
@@ -44,6 +45,7 @@ const getLinksFromGoogle = async (title: string) => {
 
   const selectors: { [key: string]: ISelectors } = {
     'https://www.letras.mus.br': { lyrics: '.cnt-letra' },
+    'https://www.letras.com': { lyrics: '.cnt-letra' },
     'https://www.letras.com.br': { lyrics: '.lyrics-section' },
     'https://www.cifraclub.com.br': { lyrics: '.letra-l' },
     'https://www.vagalume.com.br': { lyrics: '#lyrics' }
