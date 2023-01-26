@@ -6,7 +6,6 @@ export default ($: CheerioAPI, link: IGoogleParsedLinks) => {
 
   const $el = load($(link.selectors.lyrics).toString());
 
-
   $el('.l_row').each((_, el) => {
     data.lyrics += $el(el).text() + '\n';
   })

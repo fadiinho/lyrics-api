@@ -10,4 +10,6 @@ export interface IGoogleParsedLinks {
 
 export type ParserResult = Partial<IGoogleParsedLinks> & {
   lyrics: string | undefined;
+  songName?: string;
+  artist?: string;
 }

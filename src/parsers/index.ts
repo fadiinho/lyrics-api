@@ -9,7 +9,6 @@ import cifraclubComBrParser from "./cifraclubComBrParser";
 
 export const parse = ($: CheerioAPI, link: IGoogleParsedLinks) => {
   let lyrics: ParserResult;
-
   // Main inspiration:
   // https://github.com/gabrideiros/music-lyrics
   if (link.baseUrl?.includes('https://www.letras.mus.br') || link.baseUrl?.includes('https://www.letras.com')) {
